@@ -10,7 +10,7 @@ export const Hero = () => {
 
     return (
         <div className="w-full relative">
-            <div className="bg-[#eee] lg:h-4/5 h-2/3 py-4 opacity-70 absolute top-0 left-0 w-full flex flex-col items-center justify-center gap-5">
+            <div className="bg-[#eee] h-full py-4 opacity-70 absolute top-0 left-0 w-full flex flex-col items-center justify-center gap-5">
                 <h1 className="md:text-4xl text-lx sm:text-lg w-1/2 text-center text-[#001C30]">
                     Descubre y conecta con grupos que compartan tu afición al deporte
                 </h1>
