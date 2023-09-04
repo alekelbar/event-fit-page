@@ -13,13 +13,4 @@
 .w-48{
   text-decoration-color: black;
 }
-/* styles.css */
-li.footer-link {
-  cursor: pointer;
-  transition: border-bottom 0.3s ease;
-}
-
-li.footer-link:hover {
-  border-bottom: 2px solid white;
-}
 

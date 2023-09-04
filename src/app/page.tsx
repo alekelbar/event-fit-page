@@ -4,6 +4,9 @@ import Footer from "../../components/Footer";
 import image1 from "public/assets/1.jpg";
 import Image from "next/image";
 import Link from "next/link";
+import image2 from "public/assets/secure_all.png"
+
+
 // Ah andrey les gustan los rabanos
 export default function Home() {
   return (
@@ -48,6 +51,10 @@ export default function Home() {
         </div>
       </div>
 
+
+      
+
+      
       
       <Footer />
       
