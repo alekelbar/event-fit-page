@@ -17,9 +17,9 @@ const Banner = () => {
   });
 
   return (
-    <div className="h-96 max-w-screen-4xl mx-auto flex flex-col justify-center items-center font-bold text-center">
-      <p className="text-lg md:text-4xl font-semibold mt-4 mb-12" style={{ color: '#001C30' }}>
-        {text} <Cursor cursorBlinking cursorStyle="|" cursorColor="#ffff" />
+    <div className="h-96 max-w-screen-4xl mx-auto flex flex-col justify-center items-center font-bold text-center mt-1">
+      <p className="text-lg md:text-4xl font-semibold mt-2 mb-6" style={{ color: '#001C30' }}>
+        {text} <Cursor cursorBlinking cursorStyle="|" cursorColor="#001C30" />
       </p>
       <button
         className="w-64 h-15 bg-black text-white uppercase text-sm font-semibold rounded-full hover:bg-darkRed hover:text-white duration-300"
