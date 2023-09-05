@@ -17,20 +17,10 @@ const Banner = () => {
   });
 
   return (
-    <div className="h-96 max-w-screen-4xl mx-auto flex flex-col justify-center items-center font-bold text-center mt-1">
+    <div className="relative z-10 h-96 w-full sm:w-1/2 mx-auto flex flex-col justify-center items-center font-bold text-center mt-1">
       <p className="text-lg md:text-4xl font-semibold mt-2 mb-6" style={{ color: '#001C30' }}>
         {text} <Cursor cursorBlinking cursorStyle="|" cursorColor="#001C30" />
       </p>
-      <button
-        className="w-64 h-15 bg-black text-white uppercase text-sm font-semibold rounded-full hover:bg-darkRed hover:text-white duration-300"
-        style={{
-          backgroundColor: "#64CCC5",
-          color: "#001C30",
-          padding: "5px 15px",
-        }}
-      >
-        Descarga nuestra APP
-      </button>
     </div>
   );
 };

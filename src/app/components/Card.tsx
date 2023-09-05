@@ -11,15 +11,10 @@ interface CardProps {
 
 export const Card: React.FC<CardProps> = ({ image, text, title, reverse }) => {
   const { windowSize } = useScreenSize();
-  const [isHovered, setIsHovered] = useState(false);
 
   return (
     <section
-      className={`mx-auto my-5 w-2/3 grid grid-cols-1 gap-5 md:grid-cols-2 items-center ${
-        isHovered ? "transform scale-105 transition-transform" : ""
-      }`}
-      onMouseEnter={() => setIsHovered(true)}
-      onMouseLeave={() => setIsHovered(false)}
+      className={`mx-auto hover:brightness-75 p-5 group my-5 w-2/3 grid grid-cols-1 gap-5 md:grid-cols-2 items-center hover:transform hover:scale-105 hover:transition-transform`}
     >
       {reverse && windowSize.width >= 768 ? (
         <>
@@ -29,7 +24,7 @@ export const Card: React.FC<CardProps> = ({ image, text, title, reverse }) => {
           </div>
           <img
             src={image.src}
-            className="w-1/2 mx-auto rounded-lg md:rounded-full"
+            className="w-1/2 transition-all duration-150 group-hover:w-[80%] mx-auto rounded-lg md:rounded-full group-hover:rounded"
             alt=""
           />
         </>
@@ -37,7 +32,7 @@ export const Card: React.FC<CardProps> = ({ image, text, title, reverse }) => {
         <>
           <img
             src={image.src}
-            className="w-1/2 mx-auto rounded-lg md:rounded-full"
+            className="w-1/2 transition-all duration-150 group-hover:w-[80%] mx-auto rounded-lg md:rounded-full group-hover:rounded"
             alt=""
           />
           <div className="flex flex-col gap-1">
