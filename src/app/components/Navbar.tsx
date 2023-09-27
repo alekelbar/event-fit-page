@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import logo from "public/assets/Logo.png";
 import Link from "next/link";
+import Image from "next/image";
 
 const Navbar = () => {
   const [menuOpen, setMenuOpen] = useState(false);
@@ -10,10 +11,10 @@ const Navbar = () => {
   };
 
   return (
-    <div className="w-full sticky top-0 z-20 h-28 lg:h-28 border-b-[1px] text-black lg:text-white bg-[#176b87]">
+    <div className="w-full sticky top-0 z-20 h-36 lg:h-32 border-b-[1px] text-black lg:text-white bg-[#176b87]">
       <div className="max-w-screen-2xl h-full mx-auto px-4 flex items-center justify-between">
         <div className="flex items-center">
-          <img src={logo.src} alt="Logo" className="h-16 lg:h-20 mr-2 lg:mr-4 animate-pulse" />
+          <Image src={logo.src} alt="Logo" className="h-16 lg:h-20 mr-2 lg:mr-4 animate-bounce" />
           <div>
             <h1 className="text-lg lg:text-xl uppercase font-bold">Event-Fit</h1>
             <a
